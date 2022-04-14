@@ -40,9 +40,9 @@ segment_data <- tribble(
          caption = "5ta Encuesta Longitudinal de Empresas\nMinisterio de Economía con INE Chile")
 )
 
-ggsave(filename = "Plots/missing_cols_pct.png",
-       plot = p1, device = ragg::agg_tiff, 
-       dpi = 300, width = 7)
+# ggsave(filename = "Plots/missing_cols_pct.png",
+       # plot = p1, device = ragg::agg_tiff, 
+       # dpi = 300, width = 7)
 
 systemfonts::system_fonts() |> 
   filter(str_detect(family, "Caption")) |> 
