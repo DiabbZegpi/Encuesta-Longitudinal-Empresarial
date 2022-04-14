@@ -9,4 +9,4 @@ El dataset comprende 2 columnas de *Rol*, 7 columnas de caracterización de la e
 
 La proporción de datos faltantes es muy alta en algunas columnas. Estos datos faltantes se propagan y contaminan los análisis. La siguiente figura muestra el porcentaje de valores faltantes contra la frecuencia por columna.
 
-<img src="Plots/missing_cols_pct.png">
+<img src="https://github.com/DiabbZegpi/Encuesta-Longitudinal-Empresarial/blob/main/Plots/missing_cols_pct.png">
