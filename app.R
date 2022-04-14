@@ -92,7 +92,7 @@ tabItem(
            plotOutput("optim_k", width = "100%")),
     column(width = 6,
            h2("Elección de k"),
-           p("La elección del número de clusters para el algoritmo k-means se efetuó con el método del codo, punto en que la suma de los cuadrados intra cluster sufre un reduce la velocidad con que decrese, en la medida que se aumenta k."))
+           p("La elección del número de clusters para el algoritmo k-means se efetuó con el método del codo, método que elige el punto en que la suma de los cuadrados intra cluster sufre una reducción drástica en la velocidad con que decrecee, en la medida que se k aumenta."))
   ),
   fluidRow(
     column(width = 6,
@@ -198,7 +198,7 @@ server <- function(input, output, session) {
   
   output$cluster_plot <- renderPlotly({
     p <- augmented |>
-      ggplot(aes(!!input$var1, !!input$var2, color = .cluster)) +
+      ggplot(aes(!!input$var1, !!input$var2, color = .cluster, label = Glosa_CIIU)) +
       geom_point(alpha = .5, size = 2) +
       labs(color = "Cluster", 
            title = "Clusters por componentes principales")
